@@ -1,10 +1,12 @@
-import React,{Fragment} from 'react'
+import React from 'react'
 import ContactHead from './ContactHead';
+import ContactBody from './ContactBody'
 
-export function Container({contacts}) {
+export function Container({ src }) {
   return (
-    <Fragment>
-      <ContactHead quantity={contacts.length}/>    
-    </Fragment>
+    <div className='Container'>
+      <ContactHead />
+      <ContactBody Data={src}/>
+    </div>
   );
 }

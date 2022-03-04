@@ -1,35 +1,36 @@
-import './App.css';
+import './styles/App.css';
 import dist from '@testing-library/user-event';
-import React,{Fragment} from 'react';
-import {Container} from './components/Container';
+import React from 'react';
+import { Container } from './components/Container';
+import Btn from './components/Btn';
 
 class App extends React.Component {
-  constructor(props){
+  constructor(props) {
     super(props);
-    this.state = {contacts: []};
-    this.webService = "http://www.raydelto.org/agenda.php";
-    this.getHttpRequest = {method: "GET"}
+    this.state = { contacts: [] };
+    this.webService = 'http://www.raydelto.org/agenda.php';
+    this.getHttpRequest = { method: "GET" }
+    this.handleUpdateContacts = this.getContacts.bind(this);
   }
 
-  // fetch data from api when component get rendered
-  componentDidMount(){
-    fetch(this.webService,this.getHttpRequest)
-    .then(data => data.json())
-    .then(data => {
-        let i = 0;
-        let contactList = [];
-        while(data.length > i){
-          contactList.push(data[i]);
-          i++;
-        }
-        this.setState( {contacts: contactList});
-      }
-    );
+  // Get data from api
+  getContacts() {
+    fetch(this.webService, this.getHttpRequest)
+      .then(data => data.json())
+      .then(data => { this.setState({ contacts: data }); });
   }
-  
-  render(){
+
+  // Fetch data from api when component get rendered
+  componentDidMount() {
+    this.getContacts();
+  }
+
+  render() {
     return (
-      <Container contacts={this.state.contacts} /> 
+      <>
+        <Container src={this.state.contacts} />
+        <Btn Data={{ action: '', text: '+' }} />
+      </>
     );
   }
 }
