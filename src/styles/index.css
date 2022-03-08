@@ -5,9 +5,37 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+  background: linear-gradient(60deg,rgba(128, 128, 128, 0.863),#cbe3f5ef);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.Title{
+  color:#ffffff;
+  background-color: #423f3f;
+  padding: 5px;
+}
+
+.ContactBook{
+  background: rgb(226, 226, 226);
+}
+
+.mrg-10-r{
+  margin-right:10px ;
+}
+
+.mrg-10-l{
+  margin-left:10px ;
+}
+
+h6 > span{
+  color: #0d6efd;
+}
+
+button > svg {
+  margin: 0px 0px 5px 10px;
 }

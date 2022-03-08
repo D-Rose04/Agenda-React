@@ -1,0 +1,26 @@
+.Scroll {
+    height: 32.5rem;
+    overflow-y: scroll; 
+    
+}
+
+
+::-webkit-scrollbar:horizontal{
+    height: 0px;
+}
+
+::-webkit-scrollbar{
+    background: linear-gradient(120deg,rgba(128, 128, 128, 0.863),#cbe3f5ef);
+    width: 10px;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: rgb(53, 52, 52);
+    height: 80px;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: rgb(95, 94, 94);
+}

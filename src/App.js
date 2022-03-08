@@ -1,8 +1,5 @@
-import './styles/App.css';
-import dist from '@testing-library/user-event';
 import React from 'react';
 import { Container } from './components/Container';
-import Btn from './components/Btn';
 
 class App extends React.Component {
   constructor(props) {
@@ -29,7 +26,6 @@ class App extends React.Component {
     return (
       <>
         <Container src={this.state.contacts} />
-        <Btn Data={{ action: '', text: '+' }} />
       </>
     );
   }
