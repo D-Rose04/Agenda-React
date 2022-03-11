@@ -1,5 +1,5 @@
 # React Phone Book
-This is an example of a phone book built in react.js, using functional components and bootstrap installed as dependendcy.
+This is an example of a phone book built in react.js, using functional components and bootstrap installed as dependency.
 
 ### Contacts list  
 ![Preview1](./screen1.PNG)
