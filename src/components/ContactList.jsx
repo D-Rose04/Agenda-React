@@ -10,20 +10,25 @@ export default function ContactList({ Contacts }) {
   };
 
   return (
-    <div className='Scroll mt-2'>
-      <table className='table table-light table-striped table-bordered'>
-        <thead style={style} className="thead-primary">
-          <tr>
-            <th>Nombre</th>
-            <th>Apellido</th>
-            <th>Telefono</th>
-          </tr>
-        </thead>
-        <tbody>
-          {Contacts.map((contact) =>
-            (<Contact key={uuid()} source={contact} />))}
-        </tbody>
-      </table>
-    </div>
+    <>
+    {/*Contact List*/}
+      <div className='Scroll mt-2'>
+        <table className='table table-light table-striped table-bordered'>
+          {/* Columns */}
+          <thead style={style} className="thead-primary">
+            <tr>
+              <th>Nombre</th>
+              <th>Apellido</th>
+              <th>Telefono</th>
+            </tr>
+          </thead>
+          <tbody>
+            {/* Rows */}
+            {Contacts.map((contact) =>
+              (<Contact key={uuid()} source={contact} />))}
+          </tbody>
+        </table>
+      </div>
+    </>
   )
 }

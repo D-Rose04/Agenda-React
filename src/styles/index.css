@@ -32,6 +32,10 @@ code {
   margin-left:10px ;
 }
 
+.transparent{
+  height: 100vh;
+}
+
 h6 > span{
   color: #0d6efd;
 }
@@ -39,3 +43,4 @@ h6 > span{
 button > svg {
   margin: 0px 0px 5px 10px;
 }
+
