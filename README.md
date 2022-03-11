@@ -2,7 +2,7 @@
 This is an example of a phone book built in react.js, using functional components and bootstrap installed as dependendcy.
 
 ### Contacts list  
-![Preview1](./screen1.png)
+![Preview1](./screen1.PNG)
 
 ### New contact form 
 ![Preview2](./screen2.PNG)
