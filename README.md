@@ -1,3 +1,16 @@
+# React Phone Book
+This is an example of a phone book built in react.js, using functional components and bootstrap installed as dependendcy.
+
+#### Contacts list  
+[Preview1]("./screen1.png")
+
+#### New contact form 
+[Preview2]("./screen2.PNG")
+
+functionalities:
+    - Get contact list from [API]("http://www.raydelto.org/agenda.php")
+    - Allows users to register new contacts.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
